@@ -1,0 +1,20 @@
+.show {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(138deg, rgb(32, 201, 255) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
+    padding: 60px;
+}
+
+.show img {
+    width: 22rem;
+    height: 34rem;
+    border-radius: 8px;
+    box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.special {
+    transform: translateY(130px);
+}

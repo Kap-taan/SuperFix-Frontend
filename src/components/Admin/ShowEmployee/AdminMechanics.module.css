@@ -1,0 +1,77 @@
+.mechanics {
+    /* border: 2px solid red; */
+    height: 100vh;
+    /* width: 100vw; */
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(33, 34, 46);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.mechanics_first {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h3 {
+    font-size: 30px;
+}
+
+.heading p {
+    color: rgb(104, 107, 133);
+    font-weight: bold;
+}
+
+.btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(39, 43, 65);
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+}
+
+.btn button:hover {
+  transform: scale(1.1);
+}
+
+.employees {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 40px 30px;
+}
+
+.employee {
+  padding: 20px;
+  background-color: rgb(39, 43, 65);
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.employee img {
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.employee p {
+  color: grey;
+}
+
+.employee:hover {
+  transform: scale(1.06);
+}

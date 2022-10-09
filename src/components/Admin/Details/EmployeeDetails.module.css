@@ -1,0 +1,91 @@
+.addemployee {
+    min-height: 100vh;
+    /* width: 100vw; */
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(33, 34, 46);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.addemployee_first {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h3 {
+    font-size: 30px;
+}
+
+.heading p {
+    color: rgb(104, 107, 133);
+    font-weight: bold;
+}
+
+.btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(39, 43, 65);
+  border: 0;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn button:hover {
+  transform: scale(1.1);
+}
+
+.main_logo {
+    /* border: 2px solid green; */
+    padding: 60px 80px;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(39, 43, 65);
+    margin-bottom: 40px;
+}
+
+.main_logo h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.single_field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.single_field label {
+    margin-bottom: 12px;
+}
+
+.single_field input {
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 30rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_logo button {
+    /* width: 100%; */
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(33, 34, 46);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}

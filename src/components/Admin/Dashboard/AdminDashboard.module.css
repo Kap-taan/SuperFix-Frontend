@@ -1,0 +1,152 @@
+.dashboard {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(33, 34, 46);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.dashboard_first {
+    /* border: 2px solid blue; */
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.heading h3 {
+    font-size: 30px;
+}
+
+.heading p {
+    color: rgb(104, 107, 133);
+    font-weight: bold;
+}
+
+.boxes {
+    /* border: 2px solid green; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    background-color: rgb(39, 43, 65);
+    padding: 20px;
+    /* width: 20vw; */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxcolor1 {
+    border-top: 10px solid rgb(59, 88, 159);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.boxcolor2 {
+    border-top: 10px solid rgba(185, 51, 118, 0.558);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.boxcolor3 {
+    border-top: 10px solid rgba(220, 39, 36, 0.456);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.boxcolor4 {
+    border-top: 10px solid rgba(28, 159, 241, 0.515);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box1 {
+    display: flex;
+    /* border: 2px solid khaki; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box1 img {
+    width: 2rem;
+}
+
+.box1 p {
+    color: rgb(104, 107, 133);
+} 
+
+.box2 {
+    /* border: 2px solid darkorchid; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box3 {
+    text-align: center;
+}
+
+.box3 p {
+    color: green;
+}
+
+.boxess {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.headingg {
+    margin-bottom: 30px;
+}
+
+.headingg h3 {
+    font-size: 20px;
+}
+
+.dashboard_second {
+    /* border: 2px solid blue; */
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.boxx {
+    background-color: rgb(39, 43, 65);
+    padding: 20px;
+    /* width: 20vw; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxx:hover {
+    transform: scale(1.05);
+}
+
+.boxx p {
+    color: rgb(104, 107, 133);
+} 
