@@ -30,7 +30,8 @@ const SignupClient = () => {
         setError('');
         // Authentication from Backend
         console.log(e.target.variant.value);
-        const response = await fetch('/api/auth/client/signup', {
+        // const response = await fetch('/api/auth/client/signup', {
+        const response = await fetch('https://superfix-api.onrender.com/api/auth/client/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

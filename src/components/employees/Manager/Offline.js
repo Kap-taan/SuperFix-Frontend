@@ -37,7 +37,8 @@ const Offline = () => {
         setLoading(true);
         setError('')
 
-        const response = await fetch('/api/auth/client/getinfo', {
+        // const response = await fetch('/api/auth/client/getinfo', {
+        const response = await fetch('https://superfix-api.onrender.com/api/auth/client/getinfo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ carNo })
