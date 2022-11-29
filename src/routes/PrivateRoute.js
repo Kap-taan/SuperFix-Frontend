@@ -3,7 +3,11 @@ import { Navigate, useLocation } from "react-router-dom"
 
 function RequireAuth({ children }) {
     let location = useLocation();
-    if (!localStorage.getItem('user')) {
+    let user = {};
+    if (localStorage.getItem('user'))
+        user = JSON.parse(localStorage.getItem('user'));
+
+    if (!localStorage.getItem('user') || user.type) {
         return <Navigate to="/client/login" state={{ from: location }} replace />;
     }
 

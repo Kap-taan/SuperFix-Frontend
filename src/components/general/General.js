@@ -12,7 +12,7 @@ const General = () => {
             <Navbar />
             <Home />
             <Show />
-            <Features />
+            {/* <Features /> */}
             <Footer />
         </div>
     )

@@ -1,0 +1,26 @@
+.error {
+    color: rgb(213, 45, 45);
+    font-family: 'Poppins', sans-serif;
+    width: 50vw;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.error h2 {
+    margin-bottom: 30px;
+}
+
+.error button {
+    background-color: rgb(50, 228, 50);
+    border: 0;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.error{
+    cursor: pointer;
+}

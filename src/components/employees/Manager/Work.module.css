@@ -1,0 +1,149 @@
+.work {
+    /* border: 2px solid red; */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work form {
+    display: flex;
+}
+
+.work form input {
+    padding: 15px 30px;
+    width: 40vw;
+    border: 0;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border: 2px solid rgba(255, 255, 255, 0.269);
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.work form input:focus {
+    outline: 0;
+}
+
+.work form button img {
+    width: 2rem;
+}
+
+.work button {
+    background-color: black;
+    border: 0;
+    border: 2px solid rgba(255, 255, 255, 0.269);
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+.result {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border: 2px solid grey;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.error {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.details {
+    /* border: 2px solid grey; */
+    padding: 20px;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    height: 100%;
+}
+
+.heading {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.detail {
+    /* border: 2px solid purple; */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+}
+
+.detail h5 {
+    color: grey;
+    font-size: 15px;
+}
+
+
+.btn {
+    margin-top: 30px;
+    color: #fff;
+    background-color: rgb(99, 202, 142)!important;
+    padding: 15px 30px!important;
+    cursor: pointer;
+    border-radius: 12px!important;
+    width: 100%!important;
+}
+
+.detailsForm {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    height: 100%;
+}
+
+.detailForm {
+    padding: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.detailForm h5 {
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+form select {
+    padding: 10px;
+    border: 0;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border: 2px solid rgba(255, 255, 255, 0.269);
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+}
+
+.finish {
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ComBtns {
+    width: 100%;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.comBtn {
+    color: #fff;
+    width: 20%;
+    /* border: 2px solid blue; */
+    border-radius: 12px!important;
+    padding: 12px!important;
+    cursor: pointer;
+}

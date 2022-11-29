@@ -1,0 +1,103 @@
+.services {
+    display: flex;
+    color: #fff;
+}
+
+.second {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    padding-top: 20px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.second::-webkit-scrollbar {
+    display: none;
+  }
+
+.info {
+    font-family: 'Poppins', sans-serif;
+    width: 50vw;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    padding: 40px;
+    overflow: scroll;
+}
+
+.info::-webkit-scrollbar {
+    display: none;
+  }
+
+.info h2 {
+    margin-bottom: 20px;
+}
+
+.details {
+    padding: 30px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.269);
+    
+}
+
+.detail {
+    margin-bottom: 30px;
+}
+
+.detail h5 {
+    color: grey;
+    /* margin-bottom: 5px; */
+}
+
+.detail button {
+    padding: 15px 40px;
+    border-radius: 12px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.379);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Add Product */
+
+.item_group {
+    border: 2px solid grey;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.item h4 {
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.info form input {
+    padding: 10px 20px;
+    width: 100%;
+    border: 0;
+    background-color: rgba(50, 49, 49, 0.549);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.269);
+}
+
+.btns button {
+    padding: 15px 40px;
+    background-color: rgba(50, 49, 49, 0.549);
+    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.269);
+    border-radius: 12px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}

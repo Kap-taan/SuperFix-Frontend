@@ -28,9 +28,12 @@ export const useClientLogin = () => {
             localStorage.setItem('user', JSON.stringify(json));
 
             // update the global state of user / auth context
+            console.log('I m here', json);
             dispatch({ type: 'LOGIN', payload: json })
 
             setLoading(false);
+
+            setError('Thank you for logging')
 
         }
 

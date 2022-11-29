@@ -32,6 +32,8 @@ export const useEmployeeLogin = () => {
 
             setLoading(false);
 
+            setError('Thank you for logging')
+
         }
 
     }

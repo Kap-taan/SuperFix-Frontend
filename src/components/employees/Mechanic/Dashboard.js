@@ -1,9 +1,14 @@
 import React from "react";
+import classes from './Dashboard.module.css'
+import Info from './Info'
+import Navbar from "./Navbar";
+
 
 const Mechanic = () => {
     return (
-        <div>
-            Mechanic Dashboard
+        <div className={classes.dashboard}>
+            <Navbar />
+            <Info />
         </div>
     )
 }

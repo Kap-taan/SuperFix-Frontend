@@ -50,7 +50,7 @@ const AddEmployee = () => {
         setError('');
         setLoading(true);
         const type = e.target.type.value;
-        const data = { name, email, age, phone, address, type };
+        const data = { name, email, age, phone, address, type, available: true };
 
         addDoc(collection(db, type), data).then(docRef => {
             console.log(`New ${type} in Firebase is created successfully`);
@@ -64,11 +64,13 @@ const AddEmployee = () => {
                     setAge('');
                     setPhone('');
                     setAddress('');
+                    setLoading(false);
                     console.log('New Employee created successfully');
                 }
             })
             .catch(err => {
                 console.log(err);
+                setLoading(false);
             })
 
     }
@@ -87,36 +89,37 @@ const AddEmployee = () => {
                 </div>
                 <div className={classes.main_logo}>
                     <h2>Employee Details</h2>
+                    {loading && <h4 style={{ textAlign: 'center', marginBottom: '20px' }}>Loading...</h4>}
                     <form onSubmit={submitHandler}>
                         <div className={classes.single_field}>
                             <label>Name</label>
-                            <input type="text" name="name" required value={name} onChange={e => setName(e.target.value)} />
+                            <input required type="text" name="name" value={name} onChange={e => setName(e.target.value)} />
                         </div>
                         <div className={classes.single_field}>
                             <label>Email</label>
-                            <input type="email" name="email" required value={email} onChange={e => setEmail(e.target.value)} />
+                            <input required type="email" name="email" value={email} onChange={e => setEmail(e.target.value)} />
                         </div>
                         <div className={classes.single_field}>
                             <label>Age</label>
-                            <input type="number" name="age" required value={age} onChange={e => setAge(e.target.value)} />
+                            <input required type="number" name="age" value={age} onChange={e => setAge(e.target.value)} />
+                        </div>
+                        <div className={classes.single_field}>
+                            <label>Phone No</label>
+                            <input required type="text" name="phone" value={phone} onChange={e => setPhone(e.target.value)} />
+                        </div>
+                        <div className={classes.single_field}>
+                            <label>Address</label>
+                            <input required type="text" name="address" value={address} onChange={e => setAddress(e.target.value)} />
                         </div>
                         <div className={classes.single_field}>
                             <label>Type of Employee</label>
-                            <select name='type'>
+                            <select name='type' required>
                                 <option value="mechanic">Mechanic</option>
                                 <option value="manager">Service Manager</option>
                                 <option value="accountant">Accountant</option>
                                 <option value="guard">Guard</option>
                                 <option value="storemanager">Store Manager</option>
                             </select>
-                        </div>
-                        <div className={classes.single_field}>
-                            <label>Phone No</label>
-                            <input type="text" name="phone" required value={phone} onChange={e => setPhone(e.target.value)} />
-                        </div>
-                        <div className={classes.single_field}>
-                            <label>Address</label>
-                            <input type="text" name="address" required value={address} onChange={e => setAddress(e.target.value)} />
                         </div>
                         <button type='submit'>Add Employee</button>
                     </form>

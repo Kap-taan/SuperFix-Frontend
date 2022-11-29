@@ -1,0 +1,114 @@
+.navbar {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    border-right: 1px solid rgba(255, 255, 255, 0.269);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+}
+
+.navbar_one {
+    /* border: 2px solid salmon; */
+    padding: 30px 40px;
+}
+
+.navbar_one__one {
+    /* border: 2px solid greenyellow; */
+}
+
+.navbar_one__one_one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.navbar_one__one_one img {
+    width: 4rem !important;
+}
+
+.navbar_one__one_one h4 {
+    margin-left: 15px;
+    /* font-weight: normal; */
+}
+
+.navbar_one__one_two h3 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    /* font-weight: normal; */
+    margin-bottom: 15px;
+}
+
+.navbar_two {
+    /* border: 2px solid saddlebrown; */
+    flex: 1;
+}
+
+.navbar_two__one_one {
+    cursor: pointer;
+    /* margin-bottom: 50px; */
+}
+
+.navbar_two__one_one {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    transition: all 0.2s ease-in;
+}
+
+.navbar_two__one_one:hover {
+    transform: scale(1.1);
+}
+
+.navbar_two__one_one img {
+    width: 2rem;
+    margin-right: 15px;
+}
+
+.navbar_two__one_one h4 {
+    font-weight: 500;
+}
+
+.navbar_three {
+    /* border: 2px solid green; */
+    padding: 30px 40px;
+}
+
+.navbar_three_one {
+    /* border: 2px solid salmon; */
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.navbar_three_one_one img {
+    width: 2rem;
+    margin-right: 15px;
+}
+
+.navbar_three_two {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_three_two img {
+    width: 2rem;
+    margin-left: 15px;
+}
+
+.navbar_three_two h4 {
+    margin-top: 12px;
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+    background-color:#20c9ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.navbar_three_one_two h5 {
+    color: rgb(63,63,63);
+}

@@ -1,7 +1,7 @@
 .login {
     display: flex;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    color: #fff;
 }
 
 .login_one {
@@ -20,8 +20,10 @@
     height: 100vh;
     /* border: 2px solid green; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 .login_two form {
@@ -69,4 +71,9 @@
     border-radius: 18px;
     border: 0;
     cursor: pointer;
+}
+
+.error {
+    color: #fff;
+    margin-bottom: 30px;
 }

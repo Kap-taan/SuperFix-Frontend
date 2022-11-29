@@ -7,7 +7,7 @@
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    background: linear-gradient(138deg, rgb(32, 201, 255) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 .footer p {

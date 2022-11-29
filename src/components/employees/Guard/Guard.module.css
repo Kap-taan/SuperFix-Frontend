@@ -1,0 +1,106 @@
+.dashboard {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+}
+
+.infos {
+    width: 80vw;
+    padding: 55px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+}
+
+.info {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: flex;
+    justify-content: space-between;
+    height: 95%;
+    overflow: scroll;
+    scrollbar-width: 0;
+}
+
+.info::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+.quote h3 {
+    font-size: 2rem;
+}
+
+.contentTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+  
+  .contentTable thead tr {
+    background-color: #333232;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .contentTable th,
+  .contentTable td {
+    padding: 12px 15px;
+  }
+  
+  .contentTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  /* .contentTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  } */
+  
+  .contentTable tbody tr:last-of-type {
+    border-bottom: 2px solid #333232;
+  }
+  
+  .contentTable tbody tr.active-row {
+    font-weight: bold;
+    color: #333232;
+  }
+
+  .contentTable img {
+    width: 2rem;
+    cursor: pointer;
+  }
+
+  .services {
+    /* border: 2px solid navy; */
+    width: 70%;
+  }
+
+  .noService {
+    text-align: center;
+    font-size: 1rem;
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 50px;
+  }
