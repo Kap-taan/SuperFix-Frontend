@@ -377,10 +377,10 @@ const Options = () => {
                     </div>
                     <div className={classes.detail}>
                         <h5>Options</h5>
-                        {service.options.length > 0 && <h3>Type: {service.options.type.toUpperCase()}</h3>}
-                        {service.options.length > 0 && <h3>Washing: {service.options.washing.toUpperCase()}</h3>}
-                        {service.options.length > 0 && <h3>Polish: {service.options.polish.toUpperCase()}</h3>}
-                        {service.options.length > 0 && <h3>Dry Clean: {service.options.dryClean.toUpperCase()}</h3>}
+                        {service.options.type && <h3>Type: {service.options.type.toUpperCase()}</h3>}
+                        {service.options.washing && <h3>Washing: {service.options.washing.toUpperCase()}</h3>}
+                        {service.options.polish && <h3>Polish: {service.options.polish.toUpperCase()}</h3>}
+                        {service.options.dryClean && <h3>Dry Clean: {service.options.dryClean.toUpperCase()}</h3>}
                     </div>
                     <div className={classes.detail}>
                         <button onClick={backHandler}>GO Back</button>

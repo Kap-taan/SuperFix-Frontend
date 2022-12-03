@@ -8,11 +8,7 @@ import { async } from "@firebase/util";
 import { json, useNavigate } from "react-router-dom";
 
 const getCollName = () => {
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    return `${day}${month}${year}`;
+    return `${new Date().toLocaleDateString().substring(0, 2)}${new Date().toLocaleDateString().substring(3, 5)}${new Date().toLocaleDateString().substring(6, 10)}`
 }
 
 const Offline = () => {
@@ -37,8 +33,8 @@ const Offline = () => {
         setLoading(true);
         setError('')
 
-        // const response = await fetch('/api/auth/client/getinfo', {
-        const response = await fetch('https://superfix-api.onrender.com/api/auth/client/getinfo', {
+        const response = await fetch('/api/auth/client/getinfo', {
+            // const response = await fetch('https://superfix-api.onrender.com/api/auth/client/getinfo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ carNo })

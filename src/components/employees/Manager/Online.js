@@ -7,11 +7,7 @@ import classes from './Online.module.css';
 import { useNavigate } from "react-router-dom";
 
 const getCollName = () => {
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    return `${day}${month}${year}`;
+    return `${new Date().toLocaleDateString().substring(0, 2)}${new Date().toLocaleDateString().substring(3, 5)}${new Date().toLocaleDateString().substring(6, 10)}`;
 }
 
 const compare = (a, b) => {

@@ -10,8 +10,8 @@ export const useEmployeeLogin = () => {
         setLoading(true);
         setError('');
 
-        // const response = await fetch('/api/auth/employee/login', {
-        const response = await fetch('https://superfix-api.onrender.com/api/auth/employee/login', {
+        const response = await fetch('/api/auth/employee/login', {
+            // const response = await fetch('https://superfix-api.onrender.com/api/auth/employee/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ employeeId, password })

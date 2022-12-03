@@ -11,8 +11,8 @@ export const useClientSignup = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('https://superfix-api.onrender.com/api/auth/client/signup', {
-            // const response = await fetch('/api/auth/client/signup', {
+        // const response = await fetch('https://superfix-api.onrender.com/api/auth/client/signup', {
+        const response = await fetch('/api/auth/client/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password, name, address, phone, carNo, company, model, variant })

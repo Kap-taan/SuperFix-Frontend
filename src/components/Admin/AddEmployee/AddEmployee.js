@@ -26,6 +26,7 @@ const AddEmployee = () => {
         const employeeId = email.split('@')[0];
         const employeePassword = id.slice(7, 15);
         const response = await fetch('/api/auth/employee/signup', {
+            // const response = await fetch('https://superfix-api.onrender.com/api/auth/employee/signup', {
             method: 'POST',
             body: JSON.stringify({ employeeId, email, password: employeePassword, type, firebaseId: id }),
             headers: {
